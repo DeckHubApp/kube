@@ -1,7 +1,7 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  namespace: shtik
+  namespace: slidable
   name: redis
 spec:
   replicas: 1
@@ -20,7 +20,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: redis
-  namespace: shtik
+  namespace: slidable
   labels:
     app: redis
 spec:
